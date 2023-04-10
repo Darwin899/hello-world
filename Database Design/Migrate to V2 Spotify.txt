@@ -1,0 +1,8 @@
+How would I migrate my schema to v2 of the app?
+
+In order to allow multiple playlists I would add a new table user_playlists with a foreign key to the users table and a foreign key to the playlists table
+
+Multiple account types: 
+- add a new column account_type to the users table 
+- update the account_type column in the user_playlists table to reference the users table 
+
